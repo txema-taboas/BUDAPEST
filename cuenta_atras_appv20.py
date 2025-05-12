@@ -8,7 +8,7 @@ st.set_page_config(page_title="Budapest Beer Countdown", layout="centered")
 st_autorefresh(interval=1000, key="refresh_countdown")
 
 # 📸 Layout: imagen a la izquierda, texto a la derecha
-col1, col2 = st.columns([2, 3])  # Imagen = 2 parte, Texto = 3 partes
+col1, col2 = st.columns([1, 4])  # Imagen = 2 parte, Texto = 3 partes
 
 with col1:
     st.image("https://raw.githubusercontent.com/txema-taboas/budapest/main/Budapest.jpg", use_container_width=True)
