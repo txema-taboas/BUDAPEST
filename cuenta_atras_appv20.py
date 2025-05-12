@@ -8,7 +8,9 @@ st.set_page_config(page_title="Budapest Beer Countdown", layout="centered")
 st_autorefresh(interval=1000, key="refresh_countdown")
 
 # 📸 Imagen de Budapest (puedes subirla a GitHub y usar el enlace RAW o subirla directamente en la app)
-st.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Budapest_Parliament_Night.jpg", use_column_width=True)
+# Imagen desde tu repo con ancho fluido moderno
+st.image("https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/budapest.jpg", use_container_width=True)
+
 
 # 🍺 Encabezado divertido
 st.title("🍻 Cuenta atrás para beber cervezas!!!")
