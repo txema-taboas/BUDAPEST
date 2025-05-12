@@ -6,3 +6,4 @@ streamlit-autorefresh
 
 # (Opcional) Para fuentes personalizadas o gráficos futuros
 pillow
+WindowQueryHelper
