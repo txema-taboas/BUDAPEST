@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime
-from streamlit_extras.st_autorefresh import st_autorefresh
+from streamlit_autorefresh import st_autorefresh
 
 st.set_page_config(page_title="Cuenta Atrás", layout="centered")
 st.title("⏳ Cuenta Atrás en Tiempo Real")
