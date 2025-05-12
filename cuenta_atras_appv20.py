@@ -12,6 +12,7 @@ st_autorefresh(interval=1000, key="refresh_countdown")
 st.image("https://github.com/txema-taboas/budapest/blob/main/Budapest.jpg", use_container_width=True)
 
 
+
 # 🍺 Encabezado divertido
 st.title("🍻 Cuenta atrás para beber cervezas!!!")
 
