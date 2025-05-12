@@ -4,23 +4,29 @@ from streamlit_autorefresh import st_autorefresh
 
 st.set_page_config(page_title="Budapest Beer Countdown", layout="centered")
 
-# 🔁 Refresca cada segundo
+# 🔁 Refrescar automáticamente cada segundo
 st_autorefresh(interval=1000, key="refresh_countdown")
 
-# 👉 Dividir en columnas: imagen | texto
-col1, col2 = st.columns([1, 2])  # más espacio para el texto
+# 📸 Layout: imagen a la izquierda, texto a la derecha
+col1, col2 = st.columns([1, 2])
 
 with col1:
     st.image("https://raw.githubusercontent.com/txema-taboas/budapest/main/Budapest.jpg", use_container_width=True)
 
 with col2:
-    st.title("🍻 Cuenta atrás para beber cervezas!!!")
+    st.markdown(
+        "<h1 style='color:#ff9900; font-family:Courier New;'>🍻 ¡Cuenta atrás para beber cervezas!</h1>",
+        unsafe_allow_html=True
+    )
 
     fecha_inicio_str = "2025-05-22 06:45:00"
     fecha_fin_str = "2025-05-26 22:00:00"
     fecha_inicio = datetime.strptime(fecha_inicio_str, "%Y-%m-%d %H:%M:%S")
 
-    st.markdown(f"**Fechas de la visita:** {fecha_inicio_str} a {fecha_fin_str}")
+    st.markdown(
+        f"<h4 style='color:#bbbbbb;'>Fechas de la visita:<br>{fecha_inicio_str} → {fecha_fin_str}</h4>",
+        unsafe_allow_html=True
+    )
 
     ahora = datetime.now()
     if ahora >= fecha_inicio:
@@ -31,6 +37,10 @@ with col2:
         horas, resto = divmod(diferencia.seconds, 3600)
         minutos, segundos = divmod(resto, 60)
 
-        st.markdown(f"### ⏱️ Faltan {dias} días, {horas:02} horas, {minutos:02} minutos y {segundos:02} segundos.")
+        st.markdown(
+            f"<h2 style='color:#00ff99; font-family:Courier New;'>⏱️ {dias} días, {horas:02}h {minutos:02}m {segundos:02}s</h2>",
+            unsafe_allow_html=True
+        )
+
 
 
