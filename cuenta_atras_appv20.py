@@ -9,7 +9,7 @@ st_autorefresh(interval=1000, key="refresh_countdown")
 
 # 📸 Imagen de Budapest (puedes subirla a GitHub y usar el enlace RAW o subirla directamente en la app)
 # Imagen desde tu repo con ancho fluido moderno
-st.image("https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/budapest.jpg", use_container_width=True)
+st.image("https://github.com/txema-taboas/budapest/blob/main/Budapest.jpg", use_container_width=True)
 
 
 # 🍺 Encabezado divertido
