@@ -1,0 +1,8 @@
+# Framework principal
+streamlit
+
+# Refrescar la app automáticamente cada segundo
+streamlit-autorefresh
+
+# (Opcional) Para fuentes personalizadas o gráficos futuros
+pillow
